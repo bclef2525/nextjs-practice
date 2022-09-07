@@ -1,9 +1,28 @@
-import styles from "../styles/Home.module.css"
+import Link from "next/link"
 
-export default function Home() {
+function HomePage() {
   return (
-    <div className={styles.main}>
-      <h1>Hello Next World!</h1>
+    <div>
+      <h1>The Home Page</h1>
+      <ul>
+        <li>
+          <Link href="/portfolio">Portfolio</Link>
+        </li>
+        <li>
+          <Link href="/blog/2022/1">blog</Link>
+        </li>
+        <li>
+          <Link href="/clients">clients</Link>
+        </li>
+        <li>
+          <Link href="/products">products</Link>
+        </li>
+        <li>
+          <Link href="/about">about</Link>
+        </li>
+      </ul>
     </div>
   )
 }
+
+export default HomePage
