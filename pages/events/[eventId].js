@@ -1,9 +1,6 @@
-function EventDetailPage() {
-  return (
-    <div>
-      <h1 className="text-9xl font-thin underline">Event Detail Page</h1>
-    </div>
-  )
+function EventDetailPage({ event }) {
+  //   const { id, title, description, location, date, image } = event
+  return <li></li>
 }
 
 export default EventDetailPage
