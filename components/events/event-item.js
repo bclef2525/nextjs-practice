@@ -15,15 +15,15 @@ function EventItem({ event }) {
 
   return (
     <li>
-      <div className="xl w-11/12 m-10 flex justify-center rounded-lg overflow-auto shadow-2xl">
+      <div className="xl  m-10 md:flex-row md:w-11/12 flex-col flex justify-center rounded-lg overflow-auto shadow-2xl">
         <img
-          className="w-6/12 object-cover h-[500px]"
+          className="md:w-6/12 object-cover h-[500px]"
           src={imageLink}
           alt={title}
         ></img>
-        <div className="w-6/12 h-auto p-10 flex flex-col justify-between">
+        <div className="md:w-6/12 h-auto p-10 flex flex-col justify-between">
           <h2 className="text-3xl font-bold">{title}</h2>
-          <text className="my-4 text-sm md:text-xl">{description}</text>
+          <p className="my-4 text-sm md:text-xl">{description}</p>
           <div className="flex align-center h-auto">
             <div className="w-7 mx-3">
               <AdressIcon></AdressIcon>

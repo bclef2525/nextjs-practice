@@ -7,6 +7,7 @@ import { useRouter } from "next/router"
 function AllEventsPage() {
   const router = useRouter()
   const events = getAllEvents()
+
   const findEvents = (year, month) => {
     const fullPath = `/events/${year}/${month}`
     router.push(fullPath)
