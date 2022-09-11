@@ -1,12 +1,21 @@
 import Link from "next/link"
 
 function LinkButton(props) {
+  if (props.link)
+    return (
+      <Link href={props.link}>
+        <span className="md:flex bg-gradient-to-r from-sky-500 to-indigo-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded cursor-pointer text-justify">
+          {props.children}
+        </span>
+      </Link>
+    )
   return (
-    <Link href={props.link}>
-      <span className="md:flex bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded cursor-pointer text-justify">
-        {props.children}
-      </span>
-    </Link>
+    <button
+      className="md:flex bg-gradient-to-r from-sky-500 to-indigo-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded cursor-pointer text-justify"
+      onClick={props.onClick}
+    >
+      {props.children}
+    </button>
   )
 }
 
